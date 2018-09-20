@@ -1,0 +1,2 @@
+[as of 19 SEPT 2018]
+oh no something is really wrong the first favicon that we used while experimenting with readStreams in nodeJS on port 1614 is appearing on every nodejs http server we build on port 1614 i doubt if it is the endless events loop in javascript or something else, i guess we would have to know more about ports and firewalls soon

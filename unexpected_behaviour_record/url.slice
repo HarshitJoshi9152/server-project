@@ -1,0 +1,17 @@
+
+after a lot of usage we finally uncovered the (expected|known) drawback of using
+url.splice to serve absolute urls
+
+errorReport = {
+	url:http://localhost:1614//home/hars1614/work/javascript/Object-Orient/index.html,
+	exception:{ 
+		Error: ENOENT: no such file or directory, open 'ome/hars1614/work/javascript/Object-Orient/index.html'
+  		errno: -2,
+  		code: 'ENOENT',
+  		syscall: 'open',
+  		path: 'ome/hars1614/work/javascript/Object-Orient/index.html' 
+	},
+	cause:url.splice(index),
+	location:HTMLtransferRoute,
+	ps:"a comment was found in which the developer mentioned that he used .slice(3) for a short debugging period but had to shutdown and could not continue the debugging process"
+}
