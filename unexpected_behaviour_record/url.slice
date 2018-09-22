@@ -13,5 +13,9 @@ errorReport = {
 	},
 	cause:url.splice(index),
 	location:HTMLtransferRoute,
-	ps:"a comment was found in which the developer mentioned that he used .slice(3) for a short debugging period but had to shutdown and could not continue the debugging process"
+	ps:"a comment was found in which the developer mentioned that he used .slice(3) for a short debugging period but had to shutdown and could not continue the debugging process",
+	observations:{
+		"22/09/2018":"The number of backslashes dont affect the file finding protocol used my our server meaning that it is now clear and proved that we dont need the url.slice() (in case of linux)
+		further investigation on windows platform is under progress"
+	}
 }
